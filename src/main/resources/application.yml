@@ -1,0 +1,10 @@
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/test
+    username: seanchen
+    password: localtest
+    pool-size: 30
+
+spring:
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.xml

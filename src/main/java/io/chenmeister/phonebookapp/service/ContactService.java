@@ -16,7 +16,7 @@ public class ContactService {
     private final ContactDAO contactDAO;
 
     @Autowired
-    public ContactService(@Qualifier("fakeDao") ContactDAO contactDAO) {
+    public ContactService(@Qualifier("postgres") ContactDAO contactDAO) {
         this.contactDAO = contactDAO;
     }
 
