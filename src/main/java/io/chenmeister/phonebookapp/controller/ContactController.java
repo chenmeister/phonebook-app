@@ -31,7 +31,7 @@ public class ContactController {
     }
 
     @PostMapping
-    public UUID createNewContact(@RequestBody Contact contact) {
+    public int createNewContact(@RequestBody Contact contact) {
         return contactService.insertNewContact(contact);
     }
 

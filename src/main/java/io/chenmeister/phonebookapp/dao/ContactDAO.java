@@ -8,9 +8,9 @@ import java.util.UUID;
 
 public interface ContactDAO {
 
-    UUID addContact(UUID id, Contact contact);
+    int addContact(UUID id, Contact contact);
 
-    default UUID addContact(Contact contact) {
+    default int addContact(Contact contact) {
         UUID id = UUID.randomUUID();
         return addContact(id, contact);
     }

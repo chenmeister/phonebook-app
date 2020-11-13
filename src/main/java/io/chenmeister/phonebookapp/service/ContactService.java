@@ -24,7 +24,7 @@ public class ContactService {
         return contactDAO.getAllContacts();
     }
 
-    public UUID insertNewContact(Contact contact) {
+    public int insertNewContact(Contact contact) {
         return contactDAO.addContact(contact);
     }
 
